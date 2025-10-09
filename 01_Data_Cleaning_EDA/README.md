@@ -49,7 +49,7 @@ The objective is to demonstrate a complete data workflow — from raw dataset to
 | 📄 Raw Data | [cancer-risk-factors.csv](./data/cancer-risk-factors.csv) | Original Kaggle dataset |
 | 📊 Cleaned Data | [cancer-risk-factors-cleaned.xlsx](./data/cancer-risk-factors-cleaned.xlsx) | Processed with Power Query |
 | 📓 Notebook | [EDA_Cancer_Risk.ipynb](./notebooks/EDA_Cancer_Risk.ipynb) | Python-based data analysis |
-| 📈 Visuals | [View charts folder](./visuals) | JPG charts and heatmaps |
+| 📈 Visuals | [View charts folder](./visuals) | PNG charts and heatmaps |
 | 🧾 Slides | [Cancer Risk Analysis Summary (PDF)](./slides/Cancer_Risk_Analysis_Summary.pdf) | One-slide summary of insights |
 
 ---
