@@ -1,49 +1,33 @@
-# Data Cleaning & EDA
+# Data Cleaning & EDA – Cancer Risk Factors  
 *(Dataset in English, source: Kaggle)*  
 
 ---
 
 ## Goal  
-Analyze how lifestyle, environmental, and demographic factors correlate with cancer risk across regions.  
-The project focuses on identifying key predictors and patterns using data cleaning and exploratory data analysis.
+Transform a raw health dataset into clean, interpretable insights.  
+This project identifies which lifestyle, demographic, and environmental factors are most correlated with cancer risk.
 
 ---
 
-## Process  
-1️⃣ **Data Loading & Inspection**  
-   - Import CSV file  
-   - Check shape, datatypes, and missing values  
+## ⚙️ Project Overview  
 
-2️⃣ **Data Cleaning**  
-   - Handle missing values  
-   - Rename columns for readability  
-   - Remove duplicates and outliers  
+### 1️⃣ Data Sources  
+- **Raw dataset:** [`cancer-risk-factors.csv`](./data/cancer-risk-factors.csv)  
+- **Cleaned dataset:** [`cancer-risk-factors-cleaned.xlsx`](./data/cancer-risk-factors-cleaned.xlsx) *(cleaned with Power Query)*  
 
-3️⃣ **Exploratory Analysis**  
-   - Distribution of main variables (age, alcohol use, pollution, smoking, etc.)  
-   - Correlation heatmap between factors and cancer risk  
-   - Visual insights per country/region  
+### 2️⃣ Data Cleaning  
+- Standardized column names  
+- Removed missing values and duplicates  
+- Fixed inconsistent datatypes  
+- Basic feature formatting (percentages, numeric values)  
 
-4️⃣ **Visualization**  
-   - Histograms, scatterplots, and boxplots  
-   - Heatmap of correlations  
+### 3️⃣ Exploratory Data Analysis (EDA)  
+Performed with **Python** (see [`EDA_Cancer_Risk.ipynb`](./notebooks/EDA_Cancer_Risk.ipynb)):  
+- Descriptive statistics  
+- Correlation heatmap  
+- Visualization of main risk factors (smoking, alcohol, pollution, age, etc.)  
+- Identification of top correlated features  
 
----
-
-## 📊 Tools  
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Cleaning-green)
-![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-orange)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Charts-yellow)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-red)
-
----
-
-## Files  
-📄 [Dataset – Cancer Risk Factors](./data/cancer-risk-factors.csv)  
-📓 Notebook: `EDA_Cancer_Risk.ipynb` (to be added)  
-📈 Visuals: charts and heatmaps (to be added)  
-
----
-
-> *This project demonstrates how to transform raw health data into actionable insights through cleaning, analysis, and visualization.*
+### 4️⃣ Business Insights  
+See summary slide: [`Cancer_Risk_Factors_Analysis.pptx`](./visuals/Cancer_Risk_Factors_Analysis.pdf)  
+- Environmental exposure and smoking rate drive highest risk
