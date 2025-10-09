@@ -1,28 +1,53 @@
-# Kévin Joseph — Data & Business Analyst | Master Data Specialist
+# Kévin Joseph — Data & Business Analyst | Master Data Specialist  
 
 **Power BI • Excel (VBA) • Python • SQL • D365**  
-Je transforme des données brutes en **décisions claires** et **reportings automatisés**.
+I transform raw data into **clear decisions** and **automated insights**.
 
-📂 **Portfolio complet :** 👉 [KevinJoseph-DataPortfolio](./)  
-📫 **Contact :** kevin.joseph2703@gmail.com • **LinkedIn :** https://linkedin.com/in/ton-lien
-
----
-
-## Projets
-1. **Data Cleaning & EDA (Python/Excel)** — nettoyage, profilage, 2–3 graphes  
-   → `01_Data_Cleaning_EDA/`
-2. **Dashboard Business (Power BI)** — KPI ventes/marge, storytelling visuel  
-   → `02_Business_Dashboard/`
-3. **Migration ERP & Qualité de données (Excel/VBA)** — standardisation + logs  
-   → `03_ERP_Migration/`
+📂 **Full Portfolio:** 👉 [KevinJoseph-DataPortfolio](./)  
+📫 **Contact:** kevin.joseph2703@gmail.com • **LinkedIn:** [linkedin.com/in/kevin-joseph](https://linkedin.com/in/kevin-joseph)
 
 ---
 
-## 🧰 Outils
+## Projects
+
+### 1️⃣ Data Cleaning & EDA (Python / Excel)
+**Goal:** Clean and explore a business dataset (missing values, duplicates, outliers).  
+**Tools:** Python (Pandas, Seaborn), Power Query.  
+**Result:** A clean dataset + 3 key visualizations.  
+[View project](./01_Data_Cleaning_EDA)
+
+---
+
+### 2️⃣ Business Dashboard (Power BI)
+**Goal:** Build an interactive sales dashboard with KPIs (revenue, margin, top products).  
+**Tools:** Power BI, DAX, Power Query.  
+**Result:** A clear and dynamic view for decision-making.  
+[View project](./02_Business_Dashboard)
+
+---
+
+### 3️⃣ ERP Migration & Data Quality (Excel / VBA)
+**Goal:** Simulate a Dynamics 365 migration with data cleaning automation.  
+**Tools:** Excel, VBA, Data Validation Rules.  
+**Result:** 95 % data conformity + automated import logs.  
+[View project](./03_ERP_Migration)
+
+---
+
+## 🧰 Tech Stack
 ![Excel/VBA](https://img.shields.io/badge/Excel-VBA-green)
 ![Power BI](https://img.shields.io/badge/Power%20BI-Dashboards-yellow)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![SQL](https://img.shields.io/badge/SQL-Queries-orange)
 ![D365](https://img.shields.io/badge/Dynamics%20365-ERP-blueviolet)
 
-> Du **nettoyage** à la **gouvernance ERP** : une approche rigoureuse, orientée business.
+---
+
+## About Me
+I’m a **Data & Business Analyst** with 3 years of experience in the **biopharmaceutical industry**, specializing in data visualization, master data, and process automation.  
+I love turning complexity into clarity — clean, structured, and business-oriented.
+
+> From data cleaning to ERP governance: a pragmatic approach to business intelligence.
+
+---
+⭐ Feel free to explore the folders, read the code, and view the dashboards.
