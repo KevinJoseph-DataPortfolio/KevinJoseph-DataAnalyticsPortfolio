@@ -1,0 +1,84 @@
+Sub NettoyageDonneesCompletes()
+
+    Dim wsSource As Worksheet, wsDest As Worksheet
+    Dim lastRow As Long, i As Long
+    Dim cell As Range
+    
+    ' Définir la feuille source (première feuille du classeur)
+    Set wsSource = ThisWorkbook.Sheets(1)
+    
+    ' Supprimer l'onglet Nettoyé s'il existe déjà
+    On Error Resume Next
+    Application.DisplayAlerts = False
+    ThisWorkbook.Sheets("Nettoyé").Delete
+    Application.DisplayAlerts = True
+    On Error GoTo 0
+    
+    ' Créer un nouvel onglet pour le résultat
+    Set wsDest = ThisWorkbook.Sheets.Add
+    wsDest.Name = "Nettoyé"
+    
+    ' Dernière ligne source
+    lastRow = wsSource.Cells(wsSource.Rows.Count, 1).End(xlUp).Row
+    
+    ' Copier les données brutes
+    wsSource.Range("A1:E" & lastRow).Copy wsDest.Range("A1")
+    
+    ' Nettoyage général : trim espaces
+    wsDest.Cells.Replace What:=" ", Replacement:=" ", LookAt:=xlPart
+    
+    ' Boucle de nettoyage par ligne
+    For i = 2 To lastRow
+        
+        ' Nom propre : majuscule première lettre, reste minuscule
+        If wsDest.Cells(i, 1).Value <> "" Then
+            wsDest.Cells(i, 1).Value = Application.WorksheetFunction.Proper(Trim(wsDest.Cells(i, 1).Value))
+        End If
+        
+        ' Prénom propre
+        If wsDest.Cells(i, 2).Value <> "" Then
+            wsDest.Cells(i, 2).Value = Application.WorksheetFunction.Proper(Trim(wsDest.Cells(i, 2).Value))
+        End If
+        
+        ' Email : tout en minuscule, remplacer virgules par points, supprimer espaces
+        If wsDest.Cells(i, 3).Value <> "" Then
+            wsDest.Cells(i, 3).Value = LCase(Trim(wsDest.Cells(i, 3).Value))
+            wsDest.Cells(i, 3).Value = Replace(wsDest.Cells(i, 3).Value, ",", ".")
+        End If
+        
+        ' Date : forcer conversion et format
+        If wsDest.Cells(i, 4).Value <> "" Then
+            On Error Resume Next
+            wsDest.Cells(i, 4).Value = CDate(wsDest.Cells(i, 4).Value)
+            On Error GoTo 0
+        End If
+        
+        ' Montant : supprimer symbole €, remplacer virgule par point
+        If wsDest.Cells(i, 5).Value <> "" Then
+            Dim montantTxt As String
+            montantTxt = wsDest.Cells(i, 5).Value
+            montantTxt = Replace(montantTxt, "€", "")
+            montantTxt = Replace(montantTxt, ",", ".")
+            montantTxt = Trim(montantTxt)
+            If IsNumeric(montantTxt) Then
+                wsDest.Cells(i, 5).Value = CDbl(montantTxt)
+            End If
+        End If
+        
+    Next i
+    
+    ' Appliquer format Date
+    wsDest.Columns(4).NumberFormat = "dd/mm/yyyy"
+    
+    ' Appliquer format Monétaire en €
+    wsDest.Columns(5).NumberFormat = "#,##0.00 €"
+    
+    ' Supprimer doublons (basé sur Email colonne C)
+    wsDest.Range("A1").CurrentRegion.RemoveDuplicates Columns:=3, Header:=xlYes
+    
+    ' Ajuster largeur colonnes
+    wsDest.Columns.AutoFit
+    
+    MsgBox "Nettoyage terminé ! Les données sont prêtes dans l'onglet 'Nettoyé'.", vbInformation
+
+End Sub
