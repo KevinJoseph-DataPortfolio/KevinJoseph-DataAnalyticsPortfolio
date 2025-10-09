@@ -45,10 +45,13 @@ I transform raw data into **clear decisions** and **automated insights**.
 ---
 
 ## About Me
-I’m a **Data & Business Analyst** with 3 years of experience in the **biopharmaceutical industry**, specializing in data visualization, master data, and process automation.  
-I love turning complexity into clarity — clean, structured, and business-oriented.
 
-> From data cleaning to ERP governance: a pragmatic approach to business intelligence.
+I'm a Data & Business Analyst with 3 years of experience in the biopharmaceutical industry, specializing in data visualization, master data management, and process automation.  
+I turn complexity into clarity — delivering clean, structured, and business-oriented data solutions.
+
+I help companies **improve profitability** by reducing manual reporting time, enhancing data reliability, and enabling faster, smarter business decisions.  
+If you’re looking to **turn your data into measurable performance and profit**, let’s connect —  
+I'm currently open to **remote or hybrid opportunities** in **data analytics** and **ERP transformation projects** across Europe.
 
 ---
 ⭐ Feel free to explore the folders, read the code, and view the dashboards.
