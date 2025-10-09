@@ -2,7 +2,7 @@
 # Kévin Joseph — Data & Business Analyst | Master Data Specialist  
 
 **Power BI • Excel (VBA) • Python • SQL • D365**  
-I transform raw data into **clear decisions** and **automated insights**.
+I transform raw data into **clear decisions** and **automated insights** that drive **efficiency**, **growth**, and **profitability**.
 
 📂 **Full Portfolio:** 👉 [KevinJoseph-DataPortfolio](./)  
 📫 **Contact:** kevin.joseph2703@gmail.com • **LinkedIn:** [linkedin.com/in/kevin-joseph](https://linkedin.com/in/kevin-joseph)
