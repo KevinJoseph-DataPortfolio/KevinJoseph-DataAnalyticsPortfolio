@@ -1,3 +1,4 @@
+![Image](https://github.com/user-attachments/assets/66ad652f-500d-46d0-a272-d09ebe5860d1)
 # Kévin Joseph — Data & Business Analyst | Master Data Specialist  
 
 **Power BI • Excel (VBA) • Python • SQL • D365**  
