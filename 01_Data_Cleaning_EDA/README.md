@@ -14,21 +14,38 @@ The objective is to demonstrate a complete data workflow — from raw dataset to
 ### 1️⃣ Data Collection & Preparation  
 - Import the original CSV file from Kaggle.  
 - Load and clean the dataset using **Power Query (Excel)**.  
-- Save a clean version: `cancer-risk-factors-cleaned.xlsx`.
+- Save a clean version: `cancer_risk_factor.xlsx`.
+
+📄 [Raw dataset (CSV)](./data/cancer-risk-factors.csv)  
+📊 [Cleaned dataset (Excel)](./data/cancer_risk_factor.xlsx)
+
+---
 
 ### 2️⃣ Data Cleaning (Python / Pandas)  
 - Handle missing values and outliers.  
 - Standardize column names.  
 - Remove duplicates and verify consistency.  
 
+📓 [Jupyter Notebook – EDA_Cancer_Risk.ipynb](./notebooks/EDA_Cancer_Risk.ipynb)
+
+---
+
 ### 3️⃣ Exploratory Data Analysis (EDA)  
-- Visualize variable distributions (smoking, alcohol, pollution, etc.)  
-- Compute correlations between factors and cancer risk.  
-- Highlight patterns and regional trends.
+- Distribution of key variables (age, alcohol, air pollution, smoking, etc.)  
+- Correlation heatmap between risk factors and cancer prevalence.  
+- Insights extracted from visual trends.
+
+📈 [Visuals folder](./visuals)  
+Exemples :
+- [Age distribution](./visuals/Age_dist.png)  
+- [Air pollution distribution](./visuals/Air_Pollution_dist.png)  
+- [Alcohol consumption distribution](./visuals/Alcohol_dist.png)  
+
+---
 
 ### 4️⃣ Visualization & Reporting  
-- Create charts and a heatmap using **Matplotlib** and **Seaborn**.  
-- Design a one-page **PDF summary** with key findings and visuals.
+- Summary slide presenting key findings and visuals.  
+📑 [Key Findings – Cancer Risk Factors (PDF)](./slides/Key%20Findings%20-%20Cancer%20Risk%20Factors.pdf)
 
 ---
 
@@ -37,28 +54,16 @@ The objective is to demonstrate a complete data workflow — from raw dataset to
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Cleaning-green)
 ![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-orange)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Charts-yellow)
-![PowerQuery](https://img.shields.io/badge/Excel-Power%20Query-00751A)
+![Excel](https://img.shields.io/badge/Excel-Power%20Query-00751A)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-red)
 
 ---
 
-## Project Files  
-
-| Type | File | Description |
-|------|------|-------------|
-| 📄 Raw Data | [cancer-risk-factors.csv](./data/cancer-risk-factors.csv) | Original Kaggle dataset |
-| 📊 Cleaned Data | [cancer-risk-factor.xlsx](./data/cancer_risk_factor.xlsx) | Processed with Power Query |
-| 📓 Notebook | [EDA_Cancer_Risk.ipynb](./notebooks/EDA_Cancer_Risk.ipynb) | Python-based data analysis |
-| 📈 Visuals | [View charts folder](./visuals) | PNG charts and heatmaps |
-| 🧾 Slides | [Cancer Risk Analysis Summary (PDF)](./slides/Cancer_Risk_Analysis_Summary.pdf) | One-slide summary of insights |
+## Key Insights (summary)
+- Pollution, smoking, and alcohol consumption correlate positively with cancer risk.  
+- Countries with better healthcare infrastructure show lower mortality rates.  
+- Preventive awareness programs significantly impact long-term outcomes.
 
 ---
 
-## Key Insights
-- Pollution, smoking, and alcohol use show positive correlation with cancer incidence.  
-- Regions with higher healthcare access tend to show earlier detection and lower mortality.  
-- Preventive awareness programs appear underrepresented in high-risk zones.
-
----
-
-> *This project shows end-to-end analytical thinking: from raw data to actionable insight, blending technical rigor and business clarity.*
+> *This project demonstrates the full workflow of a data analyst: collecting, cleaning, exploring, and presenting data-driven insights clearly and effectively.*
