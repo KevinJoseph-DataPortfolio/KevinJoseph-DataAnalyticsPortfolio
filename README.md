@@ -19,10 +19,10 @@ I transform raw data into **clear decisions** and **automated insights** that dr
 
 ---
 
-### 2️⃣ Business Dashboard (Power BI)
-**Goal:** Build an interactive pricing dashboard to analyze price variations, margin impact, and product sensitivity. Includes price–volume relationships, discount performance, and a first approach to price elasticity.  
-**Tools:** Power BI, DAX, Power Query.  
-**Result:** A decision-ready dashboard enabling managers to identify optimal pricing zones, detect margin leaks, and simulate the effect of price changes. 
+### 2️⃣ Pricing Prediction & Profit Optimization (Python)
+**Goal:** Build a predictive pricing model that estimates how price changes affect sales volume and profit. Includes demand forecasting, feature engineering, price–volume modeling, and simulation of the optimal price point.
+**Tools:** Python (Pandas, NumPy, Scikit-Learn), Jupyter/Colab, Excel. 
+**Result:** A data-driven pricing engine able to simulate expected demand and identify the most profitable price level for each product category.
 [View project](./02_Business_Dashboard)
 
 ---
@@ -32,6 +32,14 @@ I transform raw data into **clear decisions** and **automated insights** that dr
 **Tools:** Excel, VBA, Data Validation Rules.  
 **Result:** 95 % data conformity + automated import logs.  
 [View project](./03_ERP_Migration)
+
+---
+
+### 4️⃣ Client Data Automation & Analysis (Excel / VBA)
+**Goal:** Automate the extraction, cleaning, and analysis of client data coming from a raw PDF file. Includes PDF-to-Excel conversion, full VBA cleaning pipeline, automated statistical reporting, and insight generation. 
+**Tools:** Excel (formulas + VBA), PowerPoint, PDF, AI audio synthesis.
+**Result:** A complete end-to-end workflow transforming messy client data into a clean dataset, business KPIs, charts, and a French-language audio + slide report ready for decision-makers.
+[View project](./04_Client_Data_Automation)
 
 ---
 
