@@ -20,9 +20,9 @@ I transform raw data into **clear decisions** and **automated insights** that dr
 ---
 
 ### 2️⃣ Business Dashboard (Power BI)
-**Goal:** Build an interactive sales dashboard with KPIs (revenue, margin, top products).  
+**Goal:** Build an interactive pricing dashboard to analyze price variations, margin impact, and product sensitivity. Includes price–volume relationships, discount performance, and a first approach to price elasticity.  
 **Tools:** Power BI, DAX, Power Query.  
-**Result:** A clear and dynamic view for decision-making.  
+**Result:** A decision-ready dashboard enabling managers to identify optimal pricing zones, detect margin leaks, and simulate the effect of price changes. 
 [View project](./02_Business_Dashboard)
 
 ---
