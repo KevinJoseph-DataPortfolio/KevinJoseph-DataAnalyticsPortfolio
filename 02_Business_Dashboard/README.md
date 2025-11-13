@@ -1,2 +1,2 @@
-# 📊 Business Dashboard
+# 📊 Pricing Prediction & Profit Optimization
 Coming soon...
