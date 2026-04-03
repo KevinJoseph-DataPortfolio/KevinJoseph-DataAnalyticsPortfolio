@@ -7,7 +7,7 @@ st.set_page_config(page_title="Cancer Risk Factors", layout="wide")
 st.title("🔬 Cancer Risk Factors — Interactive Dashboard")
 st.markdown("**Dataset:** Kaggle · **Tools:** Python · Streamlit · Plotly")
 
-df = pd.read_csv("cancer-risk-factors.csv")
+df = pd.read_csv("02_Dashboard_Streamlit/cancer-risk-factors.csv")
 
 # --- FILTRES ---
 st.sidebar.header("Filters")
