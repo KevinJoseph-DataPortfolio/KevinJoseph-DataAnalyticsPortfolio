@@ -54,7 +54,7 @@ I turn raw, scattered data into decisions. 4+ years across pharma, food manufact
 
 ## 👤 About
 
-Data Analyst with 4+ years across pharma (Boehringer Ingelheim, Solvias, Innothera), food manufacturing (Marie SAS) and cosmetics (L'Oréal).
+Data Analyst with 4+ years across pharmaceutical (Boehringer Ingelheim, Solvias, Innothera), food manufacturing (Marie SAS) and cosmetics (L'Oréal).
 
 I specialize in one thing: turning messy, scattered data into dashboards and decisions that stakeholders actually use.
 
